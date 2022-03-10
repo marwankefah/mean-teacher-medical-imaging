@@ -4,6 +4,8 @@
 /data/ACDC/all_slices.list
 /data/ACDC/data
 
+/model/FETA/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

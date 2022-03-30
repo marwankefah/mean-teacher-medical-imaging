@@ -222,6 +222,11 @@ def train(args, snapshot_path):
                 (iter_num, loss.item(), loss_ce.item(), loss_dice.item()))
 
             if iter_num % 20 == 0:
+
+                #TODO visualize image in the correct format
+                # image=tio.Image(tensor=volume_batch[0][..., np.newaxis]).as_pil().convert('L')
+                # image=transforms.ToTensor()(image)
+
                 image = volume_batch[1, 0:1, :, :]
                 writer.add_image('train/Image', image, iter_num)
                 outputs = torch.argmax(torch.softmax(

@@ -1,6 +1,11 @@
 # mean-teacher-medical-imaging
 Mean Teacher with Medical Imaging Data Augmentation (torchio) 
 
+FETA dataset with 5% labeled data | Dice Score  
+---------------------------------|------------------------
+Mean Teacher ResNet-34          |  **0.5682 ± 0.22**
+Supervised Approach ResNet-34|  0.5451 ± 0.19
+
 Original Image           |  Elastic Deformation  
 :-------------------------:|:-------------------------:
 ![](https://github.com/marwankefah/mean-teacher-medical-imaging/blob/master/readme/original.png)  |  ![](https://github.com/marwankefah/mean-teacher-medical-imaging/blob/master/readme/elastic_deformation.png)
